@@ -14,9 +14,9 @@ const NextPlayer = ({id}) => {
   const navigation = useNavigation() ;
 
 
+  //permet de passer au joueur suivant
   const suivant = () => {  
 
-    navigation.navigate('truthordare', {id : id})
 
 
 
@@ -27,6 +27,9 @@ const NextPlayer = ({id}) => {
     }else {
       dispatch(nextPlayer( position + 1 )) ;
     }
+
+    navigation.navigate('truthordare', {id : id})
+
 
   }
 

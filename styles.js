@@ -42,7 +42,6 @@ export default  StyleSheet.create({
       shadowOpacity: 0.5,
     },
     homeButtonTextStyoe:{
-      color:'#FFBD59',
       letterSpacing:wp(0.4),
 
     },
@@ -74,12 +73,12 @@ export default  StyleSheet.create({
       marginVertical: 32,
     },
     slideText: {
-      color: 'rgba(255, 255, 255, 0.8)',
+      color: 'black',
       textAlign: 'center',
     },
     slideTitle: {
-      fontSize: 22,
-      color: 'white',
+      fontSize: 35,
+      color: 'black',
       textAlign: 'center',
     },
   });

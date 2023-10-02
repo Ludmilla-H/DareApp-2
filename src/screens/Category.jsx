@@ -1,11 +1,10 @@
-import { View, Text, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import { Button } from 'react-native-paper'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateLoading } from '../redux/loading'
 import { loadData } from '../commonjs/db'
 import ItemCategory from '../component/ItemCategory'
 import AppIntroSlider from 'react-native-app-intro-slider';
+import { Text , View } from 'react-native'
 
 
 const slides = [
@@ -58,13 +57,17 @@ const Category = ({navigation}) => {
   const truthOrDare = () => {
     navigation.navigate('truthordare')
   }
-  
+
   return (
       <AppIntroSlider 
       data ={categories}
       renderItem={({item}) => <ItemCategory category={item}/>}
       keyExtractor={ item => item.id }
+      showDoneButton={false}
+      showNextButton={false}
       />
+
+
   )
 }
 

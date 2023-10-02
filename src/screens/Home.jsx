@@ -23,7 +23,7 @@ const Home = ({ navigation }) => {
       <View style={styles.homeBottonPart}>
         <TouchableOpacity
           style={styles.homeButtonStyle}>
-          <Text style={styles.homeButtonTextStyoe} onPress={() => navigation.navigate('players')} > Commencer la partie !</Text>
+          <Button style={styles.homeButtonTextStyoe} labelStyle={{color:'#FFBD59',}} onPress={() => navigation.navigate('players')} > Commencer la partie !</Button>
 
         </TouchableOpacity>
 

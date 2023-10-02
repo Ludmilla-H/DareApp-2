@@ -17,7 +17,7 @@ export const loadData = async (collectionName) => {
 
 
 /***
- * récupere la liste des action ou vérité dans la base de donnée, fonction de l'id de la catégorie
+ * récupere la liste des actions ou vérité dans la base de donnée, en fonction de l'id de la catégorie
  * params (id: <string> : id category)
  ***/
 export const loadDataDareOrTruth = async (id) => {

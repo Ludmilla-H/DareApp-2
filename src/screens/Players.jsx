@@ -1,6 +1,5 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
-import player from '../redux/player'
 import { useSelector } from 'react-redux'
 import styles from '../../styles'
 import ItemPlayer from '../component/Player/ItemPlayer'
@@ -21,7 +20,7 @@ const Players = () => {
         data={players}
         renderItem={({item}) => <ItemPlayer player={item}/>}
         keyExtractor={item => item.id}
-        //lorsque la lioste est vide
+        //lorsque la liste est vide
         ListEmptyComponent={EmptyPlayer}
         ListHeaderComponent={AddPlayer}
       />

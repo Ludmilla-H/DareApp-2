@@ -7,7 +7,8 @@ import { getRandomInt } from '../commonjs/function'
 
 const ShowTruthOrDare = ({route}) => {
 
-  const { id } = route.params ;
+  const { id , type } = route.params ;
+  console.log(type)
 
   const [showtod , setShowtod ] = useState()
 
@@ -17,7 +18,7 @@ const ShowTruthOrDare = ({route}) => {
 
     console.log('loadDareOrTruth') ;
 
-    const dataTruthOrDare = await loadDataDareOrTruth(id);
+    const dataTruthOrDare = await loadDataDareOrTruth(id, type);
     console.log('dataTruthOrDare' , dataTruthOrDare)
     const index = getRandomInt( 0, dataTruthOrDare.length) ;
     console.log('index' , index) 

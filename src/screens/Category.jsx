@@ -4,7 +4,6 @@ import { updateLoading } from '../redux/loading'
 import { loadData } from '../commonjs/db'
 import ItemCategory from '../component/ItemCategory'
 import AppIntroSlider from 'react-native-app-intro-slider';
-import { Text , View } from 'react-native'
 
 
 const slides = [

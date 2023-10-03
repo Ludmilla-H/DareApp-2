@@ -20,10 +20,12 @@ export const loadData = async (collectionName) => {
  * récupere la liste des actions ou vérité dans la base de donnée, en fonction de l'id de la catégorie
  * params (id: <string> : id category)
  ***/
-export const loadDataDareOrTruth = async (id) => {
-  console.log('loadDataDareOrTruth' , id)
-  const snapShot = await firestore().collection("TruthOrDare").where("category" , "==" , id)
-  .get();
+export const loadDataDareOrTruth = async (id , type) => {
+  console.log('loadDataDareOrTruth' , id, type)
+  const snapShot = await firestore().collection("TruthOrDare")
+                                    .where("category" , "==" , id)
+                                    .where("type" , "==" , type)
+                                    .get();
 
   // Vérification des données
   if (!snapShot.empty) {

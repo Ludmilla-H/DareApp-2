@@ -25,4 +25,9 @@ export const stylesProducts = StyleSheet.create({
     fontSize: 14,
     color: 'orange',
   },
+  contentButtonFilter:{
+    backgroundColor: 'orange',
+    flexDirection:"row",
+    justifyContent:"space-around",
+  },
 });

@@ -20,8 +20,8 @@ const Route = () => {
 
     return (
     <PaperProvider>
-        <NavigationContainer>
-            <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <NavigationContainer >
+            <Stack.Navigator screenOptions={{ headerShown: false }} >
                 <Stack.Screen name='home' component={Home} />
                 <Stack.Screen name='players' component={Players} />
                 <Stack.Screen name='category' component={Category} />

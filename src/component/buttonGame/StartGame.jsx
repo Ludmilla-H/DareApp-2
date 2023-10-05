@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Button } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
+import stylesPlayers from '../../../stylesPlayers';
 
 const StartGame = () => {
 
@@ -17,10 +18,15 @@ const StartGame = () => {
 
   return (
     <View>
-      {/* {players.length >= 2 && <Button mode="contained" onPress={() => console.log('Pressed')}>Commencer la partie !</Button>} */}
-
-      <Button mode="contained" disabled={!(players.length >= 2)} onPress={start}>Commencer la partie !</Button>
-
+      <Button 
+      labelStyle={{
+        color:"#000", 
+        fontFamily: "zenDots-Regular", 
+        fontSize: 20,
+        fontWeight: "bold",
+      
+      }} 
+        disabled={!(players.length >= 2)} onPress={start}>Suivant </Button>
     </View>
   )
 }

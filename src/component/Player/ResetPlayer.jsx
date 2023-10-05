@@ -16,7 +16,7 @@ const ResetPlayer = () => {
 
     return (
         <View>
-            <Button onPress={reset}> Tout supprimer </Button>
+            <Button mode="outlined" onPress={reset}>Supprimer tout les joueurs</Button>
 
         </View>
     )

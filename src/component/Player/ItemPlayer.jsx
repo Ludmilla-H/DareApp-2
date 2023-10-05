@@ -3,6 +3,7 @@ import React from 'react'
 import { Button } from 'react-native-paper'
 import { useDispatch } from 'react-redux'
 import { delPlayer } from '../../redux/player'
+import stylesPlayers from '../../../stylesPlayers'
 
 const ItemPlayer = ({player}) => {
 
@@ -17,9 +18,11 @@ const ItemPlayer = ({player}) => {
   }
 
   return (
-    <View>
-      <Text>{player.name}</Text>
-      <Button onPress={supprimer}>X</Button>
+    <View style={stylesPlayers.containerPlayer}>
+      <View style={stylesPlayers.contentplayer}>
+      <Text style={stylesPlayers.namePlayer} >{player.name}</Text>
+      <Button labelStyle={{color:"black", marginTop: 15}} onPress={supprimer}>X</Button>
+      </View>
     </View>
   )
 }

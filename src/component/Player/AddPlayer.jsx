@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { TextInput } from 'react-native-paper';
 import { useDispatch } from 'react-redux';
 import { addPlayer } from '../../redux/player';
+import stylesPlayers from '../../../stylesPlayers';
 
 const AddPlayer = () => {
 
@@ -33,14 +34,22 @@ const AddPlayer = () => {
     return (
         <>
             <TextInput
-                label="Nom du joueur"
+                label="Nom du joueur ?"
                 value={name}
                 onChangeText={text => setName(text)}
                 onSubmitEditing={(value) => send(value.nativeEvent.text)}
+                mode="outlined"
+                contentStyle={{ }}
+                style={{
+                    backgroundColor: "#fff", 
+                    fontSize:25, 
+                    fontFamily: "ZenDots-Regular",
+                    fontWeight: "bold",
+                    alignContent: 'center',
+                    color:"#000",
+                }}
         
         />
-
-
         </>
 
     )

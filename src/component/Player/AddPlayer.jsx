@@ -17,6 +17,7 @@ const AddPlayer = () => {
         const newPlayer = {
             id: Date.now(),
             name : value,
+            tod : [],
         }
         //envoie dela données dasn le store
         dispatch(addPlayer(newPlayer))

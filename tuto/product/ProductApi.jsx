@@ -67,6 +67,8 @@ const ProductApi = () => {
                 numColumns={"2"}
                 ListFooterComponent={loadingMore ? <ActivityIndicator size={20} animating={true}/> : 
                                                     <Button onPress={more}>More</Button>}
+                                                    onEndReached={more}
+                                                    onEndReachedThreshold={0.3}
 
             />
         }

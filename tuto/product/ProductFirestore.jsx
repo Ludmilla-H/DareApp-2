@@ -15,7 +15,10 @@ const ProductFirestore = () => {
     const init = async () => {
 
         //initialisation des data
-        const snapData = await firestore().collection('product').get();
+        const snapData = await firestore()
+                                            .collection('product')
+                                            .limit(10)
+                                            .get();
         console.log("snapData", snapData)
         const dataProducts = snapData.docs.map(product => {
 

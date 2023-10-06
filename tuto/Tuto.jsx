@@ -16,8 +16,8 @@ const Tuto = () => {
         <CategoryData />
         {/* <CategoryStore /> */}
         {/* <ProductData/> */}
-         <ProductStore/>
-        {/* <ProductFirestore/> */}
+         {/* <ProductStore/> */}
+        <ProductFirestore/>
       </View>
     </Provider>
  

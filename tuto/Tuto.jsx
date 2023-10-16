@@ -8,6 +8,7 @@ import ProductData from './product/ProductData'
 import ProductStore from './product/ProductStore'
 import ProductFirestore from './product/ProductFirestore'
 import ProductApi from './product/ProductApi'
+import AuthApp from './AuthApp/AuthApp'
 
 const Tuto = () => {
   return (
@@ -19,7 +20,8 @@ const Tuto = () => {
         {/* <ProductData/> */}
         {/* <ProductStore/> */}
         {/* <ProductFirestore/> */}
-        <ProductApi/>
+        {/* <ProductApi/> */}
+        <AuthApp/>
       </View>
     </Provider>
  
